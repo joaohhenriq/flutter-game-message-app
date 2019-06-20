@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:game_message_app/pages/landing_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,18 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: HomePage()
+      home: LandingPage()
     );
   }
 }
- class HomePage extends StatefulWidget {
-   @override
-   _HomePageState createState() => _HomePageState();
- }
-
- class _HomePageState extends State<HomePage> {
-   @override
-   Widget build(BuildContext context) {
-     return Container();
-   }
- }

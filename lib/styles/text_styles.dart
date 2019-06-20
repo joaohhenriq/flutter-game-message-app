@@ -26,7 +26,7 @@ final TextStyle rankStyle = TextStyle(
   color: primaryColor,
 );
 final TextStyle selectedTabStyle = TextStyle(
-  fontSize: 22.0,
+  fontSize: 20.0,
   color: Colors.black,
   fontWeight: FontWeight.bold,
 );
