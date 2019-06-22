@@ -8,9 +8,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      home: LandingPage()
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          platform: TargetPlatform.iOS,
+        ),
+        debugShowCheckedModeBanner: false,
+        home: LandingPage());
   }
 }
