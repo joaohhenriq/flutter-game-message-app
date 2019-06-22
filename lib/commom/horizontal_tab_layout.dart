@@ -25,6 +25,13 @@ class _HorizontalTabLayoutState extends State<HorizontalTabLayout>
     _fadeTransitionAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(_controller);
   }
 
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   playAnimation() {
     _controller.reset();
     _controller.forward();
@@ -35,11 +42,11 @@ class _HorizontalTabLayoutState extends State<HorizontalTabLayout>
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 420.0,
+      height: 400.0,
       child: Stack(
         children: <Widget>[
           Positioned(
-            left: -20,
+            left: -30,
             bottom: 0,
             top: 0,
             width: 100,
@@ -99,21 +106,13 @@ class _HorizontalTabLayoutState extends State<HorizontalTabLayout>
       [
         ForumCard(forum: fortniteForum,),
         ForumCard(forum: pubgForum,),
-        ForumCard(forum: fortniteForum,),
-        ForumCard(forum: pubgForum,),
       ],
       [
         ForumCard(forum: pubgForum,),
         ForumCard(forum: fortniteForum,),
-        ForumCard(forum: fortniteForum,),
-        ForumCard(forum: pubgForum,),
       ],
       [
         ForumCard(forum: fortniteForum,),
-        ForumCard(forum: pubgForum,),
-        ForumCard(forum: fortniteForum,),
-        ForumCard(forum: pubgForum,),
-        ForumCard(forum: pubgForum,),
         ForumCard(forum: pubgForum,),
       ]
     ][index];

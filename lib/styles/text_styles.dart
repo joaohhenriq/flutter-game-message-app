@@ -25,6 +25,11 @@ final TextStyle rankStyle = TextStyle(
   fontSize: 20.0,
   color: primaryColor,
 );
+final TextStyle rankBigStyle = TextStyle(
+  fontWeight: FontWeight.bold,
+  fontSize: 30.0,
+  color: primaryColor,
+);
 final TextStyle selectedTabStyle = TextStyle(
   fontSize: 18.0,
   color: Colors.black,
@@ -36,17 +41,17 @@ final TextStyle defaultTabStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 final TextStyle headingStyle = TextStyle(
-  fontSize: 30.0,
+  fontSize: 26.0,
   color: Colors.black,
   fontWeight: FontWeight.bold,
 );
 final TextStyle subHeadingStyle = TextStyle(
-  fontSize: 22.0,
+  fontSize: 18.0,
   color: Colors.blueGrey,
   fontWeight: FontWeight.bold,
 );
 final TextStyle buttonStyle = TextStyle(
-  fontSize: 30.0,
+  fontSize: 24.0,
   color: Colors.white,
   fontWeight: FontWeight.bold,
 );
@@ -54,4 +59,19 @@ final TextStyle forumNameTextStyle = TextStyle(
   color: Colors.white,
   fontSize: 18.0,
   fontWeight: FontWeight.w800,
+);
+final TextStyle topicQuestionTextStyle = TextStyle(
+  color: Colors.black,
+  fontSize: 18.0,
+  fontWeight: FontWeight.w800,
+);
+final TextStyle topicAnswerTextStyle = TextStyle(
+  color: Colors.blueGrey,
+  fontSize: 16.0,
+  fontWeight: FontWeight.w500,
+);
+final TextStyle topicAnswerCountTextStyle = TextStyle(
+  color: Colors.white,
+  fontSize: 16.0,
+  fontWeight: FontWeight.w700,
 );
