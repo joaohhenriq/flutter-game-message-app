@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Game Msg App',
         theme: ThemeData(
           platform: TargetPlatform.iOS,
         ),
