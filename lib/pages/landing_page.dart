@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:game_message_app/api/firebase_service.dart';
 import 'package:game_message_app/commom/app_background.dart';
 import 'package:game_message_app/commom/horizontal_tab_layout.dart';
 import 'package:game_message_app/styles/colors.dart';
 import 'package:game_message_app/styles/text_styles.dart';
 
 class LandingPage extends StatelessWidget {
+
+  final FirebaseService firebaseService;
+
+  LandingPage({this.firebaseService});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +46,7 @@ class LandingPage extends StatelessWidget {
                 ),
               ),
               HeadingSubHeadingWidget(),
-              HorizontalTabLayout(),
+              HorizontalTabLayout(firebaseService: firebaseService),
               Spacer(),
               Align(
                 alignment: Alignment.bottomRight,
